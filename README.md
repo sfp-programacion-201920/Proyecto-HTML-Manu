@@ -1,0 +1,1 @@
+Esta página web trata de comentar algunas recomendaciones de comics de DC, añadiendo también un poco de la historia de los primeros cómics de la compañía.
