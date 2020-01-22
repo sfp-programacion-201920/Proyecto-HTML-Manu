@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Formulario</title>
     <!--FALTA LO DEL POST Y 3 CONTROLES INTERACTIVOS MÁS-->
 </head>
 
@@ -13,14 +13,25 @@
     <fieldset>
         <legend>Datos básicos</legend>
         <p>Nombre: <input type="text" name="nombre" size="30" autofocus></p>
-        <p>Descripción: <textarea name="Descripción" rows="8" cols="50" min="10" max="250" autofocus></textarea><br />
+        <p>Descripción: <textarea name="Descripción" rows="8" cols="50" min="10" max="250" autofocus></textarea>
         </p>
         <form action="#" method="post">
             Foto de perfil <input type="button" value="Seleccionar archivo" name="boton" id="boton" autofocus> Ningun
             archivo seleccionado
         </form>
 
+        <form action="#" method="get" target="_blank">
+            Seleccione una o más opciones de tus héroes favoritos de la batfamilia:<br />
+            <select name="menu" size="5" multiple>
+                <option value="1">Batman</option>
+                <option value="2">Robin</option>
+                <option value="3">Nightwing</option>
+                <option value="4">Batgirl</option>
+                <option value="5">Batwoman</option>
+            </select>
+        </form>
     </fieldset>
+
     <fieldset>
         <legend>Datos de cómics</legend>
         <form action="#" method="GET" target="_blank" name="formulario">
@@ -48,8 +59,10 @@
             <label for="Flash">Flash</label> <br>
     </fieldset>
     </form>
-    <button type="submit" value="enviar" name="enviar" id="enviar" autofocus>Enviar los datos</button>
-    <button type="reset" value="reset" name="reset" id="reset" autofocus>Restablecer los datos</button>
+    <form action="mailto:manuhidalgonieto@gmail.com" method="post" enctype="text/plain">
+        <button type="submit" value="enviar" name="enviar" id="enviar" autofocus>Enviar los datos</button>
+        <button type="reset" value="reset" name="reset" id="reset" autofocus>Restablecer los datos</button>
+    </form>
 </body>
 
 </html>
