@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--FALTA LO DEL POST Y 3 CONTROLES INTERACTIVOS MÁS-->
+</head>
+
+<body>
+    <fieldset>
+        <legend>Datos básicos</legend>
+        <p>Nombre: <input type="text" name="nombre" size="30" autofocus></p>
+        <p>Descripción: <textarea name="Descripción" rows="8" cols="50" min="10" max="250" autofocus></textarea><br />
+        </p>
+        <form action="#" method="post">
+            Foto de perfil <input type="button" value="Seleccionar archivo" name="boton" id="boton" autofocus> Ningun
+            archivo seleccionado
+        </form>
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos de cómics</legend>
+        <form action="#" method="GET" target="_blank" name="formulario">
+            <p>Elige tus súperheroe favorito:</p>
+
+            <input type="radio" name="superheroefavorito" id="Batman" value="Batman" autofocus>
+            <label for="Batman">Batman</label> <br>
+
+            <input type="radio" name="superheroefavorito" id="Superman" value="Superman" autofocus>
+            <label for="Superman">Superman</label> <br>
+
+            <input type="radio" name="superheroefavorito" id="Green Arrow" value="Green Arrow" autofocus>
+            <label for="Green Arrow">Green Arrow</label><br>
+
+            <input type="radio" name="superheroefavorito" id="Hawkman" value="Hawkman" autofocus>
+            <label for="Hawkman">Hawkman</label> <br>
+
+            <input type="radio" name="superheroefavorito" id="Nightwing" value="Nightwing" autofocus>
+            <label for="Hawkman">Nightwing</label> <br>
+
+            <input type="radio" name="superheroefavorito" id="Green Lantern" value="Green Lantern" autofocus>
+            <label for="Green Lantern">Green Lantern</label> <br>
+
+            <input type="radio" name="superheroefavorito" id="Flash" value="Flash" autofocus>
+            <label for="Flash">Flash</label> <br>
+    </fieldset>
+    </form>
+    <button type="submit" value="enviar" name="enviar" id="enviar" autofocus>Enviar los datos</button>
+    <button type="reset" value="reset" name="reset" id="reset" autofocus>Restablecer los datos</button>
+</body>
+
+</html>
