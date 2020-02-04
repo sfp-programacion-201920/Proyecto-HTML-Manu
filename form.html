@@ -9,32 +9,37 @@
     <!--FALTA LO DEL POST Y 3 CONTROLES INTERACTIVOS MÁS-->
 </head>
 
+
+
+
 <body>
-    <fieldset>
-        <legend>Datos básicos</legend>
-        <p>Nombre: <input type="text" name="nombre" size="30" autofocus></p>
-        <p>Descripción: <textarea name="Descripción" rows="8" cols="50" min="10" max="250" autofocus></textarea>
-        </p>
-        <form action="#" method="post">
-            Foto de perfil <input type="button" value="Seleccionar archivo" name="boton" id="boton" autofocus> Ningun
-            archivo seleccionado
-        </form>
+    <header>Cuestionario</header>
+    <main>
+        <fieldset>
+            <form method="post" action="mailto:manuhidalgonieto@gmail.com" method="POST" target="_self"
+                enctype="multipart/form-data">
+                <legend>Datos básicos</legend>
+                <label for="nombre">Nombre: <input type="text" name="nombre" size="30" autofocus></label>
+                <label for="Descripción">Descripción: </label><textarea name="Descripción" rows="8" cols="50" min="10"
+                    max="250" autofocus></textarea>
 
-        <form action="#" method="get" target="_blank">
-            Seleccione una o más opciones de tus héroes favoritos de la batfamilia:<br />
-            <select name="menu" size="5" multiple>
-                <option value="1">Batman</option>
-                <option value="2">Robin</option>
-                <option value="3">Nightwing</option>
-                <option value="4">Batgirl</option>
-                <option value="5">Batwoman</option>
-            </select>
-        </form>
-    </fieldset>
+                <label for="boton"> Foto de perfil </label><input type="button" value="Seleccionar archivo" name="boton"
+                    id="boton" autofocus>
+                Ningun archivo seleccionado
+                Seleccione una o más opciones de tus héroes favoritos de la batfamilia:<br />
+                <select name="selector de héroe" size="5" multiple>
+                    <option value="1">Batman</option>
+                    <option value="2">Robin</option>
+                    <option value="3">Nightwing</option>
+                    <option value="4">Batgirl</option>
+                    <option value="5">Batwoman</option>
+                </select>
 
-    <fieldset>
-        <legend>Datos de cómics</legend>
-        <form action="#" method="GET" target="_blank" name="formulario">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de cómics</legend>
+
             <p>Elige tus súperheroe favorito:</p>
 
             <input type="radio" name="superheroefavorito" id="Batman" value="Batman" autofocus>
@@ -57,12 +62,17 @@
 
             <input type="radio" name="superheroefavorito" id="Flash" value="Flash" autofocus>
             <label for="Flash">Flash</label> <br>
-    </fieldset>
-    </form>
-    <form action="mailto:manuhidalgonieto@gmail.com" method="post" enctype="text/plain">
-        <button type="submit" value="enviar" name="enviar" id="enviar" autofocus>Enviar los datos</button>
-        <button type="reset" value="reset" name="reset" id="reset" autofocus>Restablecer los datos</button>
-    </form>
+        </fieldset>
+
+
+     <button type="submit" value="enviar" name="enviar" id="enviar" autofocus><label  for="enviar">Enviar los datos</label></button>
+        <button type="reset" value="reset" name="reset" id="reset" autofocus><label  for="reset">Restablecer los datos</label></button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 
 </html>
