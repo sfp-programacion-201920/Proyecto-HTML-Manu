@@ -9,11 +9,11 @@
     <meta name="description" content="Los comics de DC a lo largo de la historia">
     <meta name="keywords" content="Comics, DC, Comics DC, Batman">
     <script src="./JavaScript.js"></script>
-    <!--JavaScript está desactivado-->
-    <!--Cada seccion tiene que tener su titulo en h2-->
-    <!--En el nav hay que poner un hipervinculo a cada seccion-->
+
     <!--Crear cada clase -->
     <!--Crear un div y meter los botones-->
+    <!--Crear id-->
+    <!--Centrar las imagenes y todo en general-->
 
     <title>Comics</title>
     <link rel="icon" type="image/png" href="./icons/iconodc.png" />
@@ -25,14 +25,17 @@
 
 
 <body>
+
     <style>
         body {
-            background-image: url(https://lh3.googleusercontent.com/proxy/Zkhc5API5w_xfXL3woDwg7dDxtA7_UOmmYlRfPbK3vJyQOve3GqE9kE5kOFnwlz2O75DsHWK3W-7W5OVGy7M1NHpb4mEDneBn1GQWj7dyi8);
-            opacity: 0.8;
-            background-color: red;
-            background-repeat: no-repeat;
+            background-image: url(https://images3.alphacoders.com/573/thumb-1920-57329.jpg);
+            opacity: 95%;
+            background-color: rgb(0, 17, 255);
+            background-attachment: fixed;
+
         }
     </style>
+
     <header>
         <p><a href="#final">Click aquí para ir al final</a></p>
         <figure>
@@ -47,10 +50,14 @@
     <nav>
         <h2>Índice</h2>
 
-        <a class="button" href="form.html"> <img src="./images/index/button_formulario.png"></a>
-        <a class="button" href="#seccion1"> <img src="./images/index/button_comics-de-arrow-y-batman.png"></a>
-        <a class="button" href="#seccion2"> <img src="./images/index/button_robin-y-superman.png"> </a>
-        <a class="button" href="#seccion3"> <img src="./images/index/button_flash-e-historia.png"> </a>
+        <a class="button" href="./articles/form.html"> <img src="./images/index/button_formulario.png"
+                alt="Boton de formulario"></a>
+        <a class="button" href="#seccion1"> <img src="./images/index/button_comics-de-arrow-y-batman.png"
+                alt="Boton de entrar a la primera seccion"></a>
+        <a class="button" href="#seccion2"> <img src="./images/index/button_robin-y-superman.png"
+                alt="Boton de entrar a la segunda seccion"> </a>
+        <a class="button" href="#seccion3"> <img src="./images/index/button_flash-e-historia.png"
+                alt="Boton de entrar a la tercera seccion"> </a>
 
 
         <a id="inicio"></a>
@@ -58,7 +65,7 @@
     <main>
         <section>
             <a id="seccion1"></a>
-            <h2>Noticias de próximos cómics que saldrán de DC</h2>
+            <h2>Noticias de próximos cómics que saldrán de Green Arrow y Batman</h2>
             <a id="noticias"></a>
             <hr>
             <article>
@@ -94,14 +101,16 @@
                                 style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Batman">
                         </picture>
                     </figure>
-                    <p>El 19 de noviembre sale uno de los cómics más esperados de la década
-                        Batman: ¿Qué le sucedió al Cruzado de la Capa? Esta es la información de la propia ECC y su
-                        argumento:
-                        ¿Cómo sería</p> <a href="./articles/Noticiabatman.html" target="_blank">Leer más</a>
+                </a>
+                <p>El 19 de noviembre sale uno de los cómics más esperados de la década
+                    Batman: ¿Qué le sucedió al Cruzado de la Capa? Esta es la información de la propia ECC y su
+                    argumento:
+                    ¿Cómo sería</p> <a href="./articles/Noticiabatman.html" target="_blank">Leer más</a>
             </article>
         </section>
         <section>
             <a id="seccion2"></a>
+            <h2>Noticias de próximos cómics que saldrán de Robin y Superman</h2>
             <article>
                 <a id="noticiar"></a>
 
@@ -136,13 +145,15 @@
                                 style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Superman">
                         </picture>
                     </figure>
-                    <p>El 5 de diciembre sale el nuevo tomo limitado del superman de Bendis. Argumento:
-                        ¡Bendis ya está aquí! ¡Bienvenidos a una nueva era dorada! Coincidiendo con las
-                        celebraciones <a href="./articles/Noticiasuperman.html" target="_blank">Leer más</a></p>
+                </a>
+                <p>El 5 de diciembre sale el nuevo tomo limitado del superman de Bendis. Argumento:
+                    ¡Bendis ya está aquí! ¡Bienvenidos a una nueva era dorada! Coincidiendo con las
+                    celebraciones <a href="./articles/Noticiasuperman.html" target="_blank">Leer más</a></p>
             </article>
         </section>
         <section>
             <a id="seccion3"></a>
+            <h2>Noticias de próximos cómics que saldrán de Flash y la historia de DC comics</h2>
             <article>
                 <a id="noticiaf"></a>
                 <h2> <a href="./articles/Noticiaflash.html" target="_blank">Lo último de Flash</a></h2>
@@ -155,11 +166,12 @@
                                 style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Flash">
                         </picture>
                     </figure>
-                    <p>Bart Allen ha terminado por fin aceptando su legado y se ha convertido en el último
-                        velocista en
-                        llevar el traje
-                        de Flash. Sin embargo, el horizonte está cubierto de nubes <a
-                            href="./articles/Noticiaflash.html" target="_blank">Leer más</a></p>
+                </a>
+                <p>Bart Allen ha terminado por fin aceptando su legado y se ha convertido en el último
+                    velocista en
+                    llevar el traje
+                    de Flash. Sin embargo, el horizonte está cubierto de nubes
+                    <a href="./articles/Noticiaflash.html" target="_blank">Leer más</a></p>
 
             </article>
             <article>
@@ -174,23 +186,26 @@
                                 style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Flash">
                         </picture>
                     </figure>
-                    <p>¡Hola a todos!, en este post os voy a contar un poco del origen de DC y algunas
-                        de los cómics más famosos que llegaran de esta misma editorial <a
-                            href="./articles/historia.html" target="_blank">Leer más</a></p>
+                </a>
+                <p>¡Hola a todos!, en este post os voy a contar un poco del origen de DC y algunas
+                    de los cómics más famosos que llegaran de esta misma editorial
+                    <a href="./articles/historia.html" target="_blank">Leer más</a></p>
 
             </article>
         </section>
     </main>
-    <aside></aside>
-    <footer>
-        <a id="RedesSociales"></a>
-        <a href="twitter.com" target="_blank">Twitter</a>
-        <hr>
+    <aside>
         <p> Este audio pertenece a la intro de Batman de 1991</p>
         <audio controls autoplay loop>
             <source src="./sounds/BatmanIntro.mp3">
             <source src="./sounds/BatmanIntro.ogg">
         </audio>
+    </aside>
+    <footer>
+        <a id="RedesSociales"></a>
+        <a href="twitter.com" target="_blank">Twitter</a>
+        <hr>
+
 
         Manuel Hidalgo Nieto, Programación B, curso 2019-2020
 
