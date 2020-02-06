@@ -26,44 +26,34 @@
 
 <body>
 
-    <style>
-        body {
-            background-image: url(https://images3.alphacoders.com/573/thumb-1920-57329.jpg);
-            opacity: 95%;
-            background-color: rgb(0, 17, 255);
-            background-attachment: fixed;
-
-        }
-    </style>
-
     <header>
         <p><a href="#final">Click aquí para ir al final</a></p>
         <figure>
             <picture>
                 <source media="(max-width:799px)" srcset="./images/noticiaarrow/logodcmv.jpg">
                 <source media="(max-width:800px)" srcset="./images/noticiaarrow/logodc.jpg">
-                <img src="./images/index/logodc.jpg" width="500" style="float:inherit; margin: 0px 0px 0px 400px"
+                <img src="./images/index/logodc.jpg" width="500" style="float:inherit; margin: 0px 0px 0px 450px"
                     alt="Logo de DC">
             </picture>
         </figure>
     </header>
     <nav>
         <h2>Índice</h2>
-
-        <a class="button" href="./articles/form.html"> <img src="./images/index/button_formulario.png"
-                alt="Boton de formulario"></a>
-        <a class="button" href="#seccion1"> <img src="./images/index/button_comics-de-arrow-y-batman.png"
-                alt="Boton de entrar a la primera seccion"></a>
-        <a class="button" href="#seccion2"> <img src="./images/index/button_robin-y-superman.png"
-                alt="Boton de entrar a la segunda seccion"> </a>
-        <a class="button" href="#seccion3"> <img src="./images/index/button_flash-e-historia.png"
-                alt="Boton de entrar a la tercera seccion"> </a>
-
+        <div style="text-align: center;">
+            <a class="button" href="./articles/form.html"> <img src="./images/index/button_formulario.png"
+                    alt="Boton de formulario"></a>
+            <a class="button" href="#seccion1"> <img src="./images/index/button_comics-de-arrow-y-batman.png"
+                    alt="Boton de entrar a la primera seccion"></a>
+            <a class="button" href="#seccion2"> <img src="./images/index/button_robin-y-superman.png"
+                    alt="Boton de entrar a la segunda seccion"> </a>
+            <a class="button" href="#seccion3"> <img src="./images/index/button_flash-e-historia.png"
+                    alt="Boton de entrar a la tercera seccion"> </a>
+        </div>
 
         <a id="inicio"></a>
     </nav>
     <main>
-        <section>
+        <section class="seccion1">
             <a id="seccion1"></a>
             <h2>Noticias de próximos cómics que saldrán de Green Arrow y Batman</h2>
             <a id="noticias"></a>
@@ -77,7 +67,7 @@
                             <source media="(max-width:799px)" srcset="./images/noticiaarrow/arrowmv.jpg">
                             <source media="(max-width:800px)" srcset="./images/noticiaarrow/arrow.jpg">
                             <img src="./images/noticiaarrow/arrow.jpg" width="700"
-                                style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Green Arrow">
+                                style="float:inherit; margin: 0px 0px 0px 425px" alt="Portada de Green Arrow">
                         </picture>
                     </figure>
                 </a>
@@ -97,8 +87,8 @@
                         <picture>
                             <source media="(max-width:799px)" srcset="./images/noticiabatman/batman_cruzado_capamv.jpg">
                             <source media="(max-width:800px)" srcset="./images/noticiabatman/batman_cruzado_capa.jpg">
-                            <img src="./images/noticiabatman/batman_cruzado_capa.jpg" width="300"
-                                style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Batman">
+                            <img src="./images/noticiabatman/batman_cruzado_capa.jpg" width="400"
+                                style="float:inherit; margin: 0px 0px 0px 425px" alt="Portada de Batman">
                         </picture>
                     </figure>
                 </a>
@@ -108,7 +98,7 @@
                     ¿Cómo sería</p> <a href="./articles/Noticiabatman.html" target="_blank">Leer más</a>
             </article>
         </section>
-        <section>
+        <section class="seccion2">
             <a id="seccion2"></a>
             <h2>Noticias de próximos cómics que saldrán de Robin y Superman</h2>
             <article>
@@ -123,7 +113,7 @@
                             <source media="(max-width:799px)" srcset="./images/noticiarobin/robinmv.jpg">
                             <source media="(max-width:800px)" srcset="./images/noticiarobin/robin.jpg">
                             <img src="./images/noticiarobin/robin.jpg" width="300"
-                                style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Robin">
+                                style="float:inherit; margin: 0px 0px 0px 425px" alt="Portada de Robin">
                         </picture>
                     </figure>
                 </a>
@@ -142,7 +132,7 @@
                             <source media="(max-width:799px)" srcset="./images/noticiasuperman/supermanmv.jpg">
                             <source media="(max-width:800px)" srcset="./images/noticiasuperman/superman.jpg">
                             <img src="./images/noticiasuperman/superman.jpg" width="300"
-                                style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Superman">
+                                style="float:inherit; margin: 0px 0px 0px 425px" alt="Portada de Superman">
                         </picture>
                     </figure>
                 </a>
@@ -151,7 +141,7 @@
                     celebraciones <a href="./articles/Noticiasuperman.html" target="_blank">Leer más</a></p>
             </article>
         </section>
-        <section>
+        <section class="seccion3">
             <a id="seccion3"></a>
             <h2>Noticias de próximos cómics que saldrán de Flash y la historia de DC comics</h2>
             <article>
@@ -163,7 +153,7 @@
                             <source media="(max-width:799px)" srcset="./images/noticiaflash/flash2mv.jpg">
                             <source media="(max-width:800px)" srcset="./images/noticiaflash/flash2.jpg">
                             <img src="./images/noticiaflash/flash2.jpg" width="300"
-                                style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Flash">
+                                style="float:inherit; margin: 0px 0px 0px 425px" alt="Portada de Flash">
                         </picture>
                     </figure>
                 </a>
@@ -183,7 +173,7 @@
                             <source media="(max-width:799px)" srcset="./images/index/logodcmv.jpg">
                             <source media="(max-width:800px)" srcset="./images/index/logodc.jpg">
                             <img src="./images/index/logodc.jpg" width="300"
-                                style="float:inherit; margin: 0px 0px 0px 275px" alt="Portada de Flash">
+                                style="float:inherit; margin: 0px 0px 0px 425px" alt="Portada de DC">
                         </picture>
                     </figure>
                 </a>
@@ -204,10 +194,17 @@
     <footer>
         <a id="RedesSociales"></a>
         <a href="twitter.com" target="_blank">Twitter</a>
-        <hr>
+        <img src="./images/index/twitter.png" width="20" style="float:inherit; margin: 0px 0px 0px 475px"
+            alt="Portada de DC">
+        <br>
 
-
-        Manuel Hidalgo Nieto, Programación B, curso 2019-2020
+        <br>
+        Manuel Hidalgo Nieto
+        <br>
+        Programación B
+        <br>
+        Curso 2019-2020
+        <br>
 
         <a href="#inicio">Click aquí para ir al inicio</a>
 

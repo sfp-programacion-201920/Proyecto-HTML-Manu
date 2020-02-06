@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
+    <link rel="stylesheet" href="../css/Noticias/cssform.css">
     <!--FALTA LO DEL POST Y 3 CONTROLES INTERACTIVOS MÁS-->
 </head>
 
@@ -21,18 +22,18 @@
                 <label for="nombre">Nombre: <input type="text" name="nombre" size="30" autofocus></label>
                 <label for="Descripción">Descripción: </label><textarea name="Descripción" rows="8" cols="50" min="10"
                     max="250" autofocus></textarea>
-
+                   <br> Seleccione una o más opciones de tus héroes favoritos de la batfamilia:<br />
+                    <select name="selector de héroe" size="5" multiple>
+                        <option value="1">Batman</option>
+                        <option value="2">Robin</option>
+                        <option value="3">Nightwing</option>
+                        <option value="4">Batgirl</option>
+                        <option value="5">Batwoman</option>
+                    </select>
                 <label for="boton"> Foto de perfil </label><input type="button" value="Seleccionar archivo" name="boton"
                     id="boton" autofocus>
                 Ningun archivo seleccionado
-                Seleccione una o más opciones de tus héroes favoritos de la batfamilia:<br />
-                <select name="selector de héroe" size="5" multiple>
-                    <option value="1">Batman</option>
-                    <option value="2">Robin</option>
-                    <option value="3">Nightwing</option>
-                    <option value="4">Batgirl</option>
-                    <option value="5">Batwoman</option>
-                </select>
+                
 
         </fieldset>
 
